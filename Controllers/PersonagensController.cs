@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ProjetoNaruto.Data;
 using ProjetoNaruto.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProjetoNaruto.Controllers
 {
@@ -19,9 +20,10 @@ namespace ProjetoNaruto.Controllers
             _appDbContext = appDbContext;
         }
 
-        [HttpGet]
-        public IActionResult Get() => Ok("API funcionando");
 
+        // async - torna o código assincrono com o banco = espera retorno do banco
+        // await - faz a variavel esperar retorno do banco para executar o retante do codigo
+        
         [HttpPost]
         public async Task<IActionResult> AddPersonagem(Personagem personagem)
         {
@@ -32,5 +34,15 @@ namespace ProjetoNaruto.Controllers
             // retorna codigo positivo(200) mostrando o personagem adicionado
             return Ok(personagem);
         }
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Personagem>>> GetPersonagens()
+        {
+            // var espera receber lista do banco = _banco.nomedobanco.funcao
+            var personagens = await _appDbContext.Naruto.ToListAsync();
+
+            return Ok(personagens);
+        }
+
     }
 }

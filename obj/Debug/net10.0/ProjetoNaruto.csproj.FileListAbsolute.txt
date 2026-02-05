@@ -44,3 +44,4 @@ C:\Users\user\ProjetoNaruto\bin\Debug\net10.0\Mono.TextTemplating.dll
 C:\Users\user\ProjetoNaruto\bin\Debug\net10.0\MySqlConnector.dll
 C:\Users\user\ProjetoNaruto\bin\Debug\net10.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\user\ProjetoNaruto\bin\Debug\net10.0\System.CodeDom.dll
+c:\Users\user\ProjetoNaruto\obj\Debug\net10.0\ProjetoNaruto.sourcelink.json
