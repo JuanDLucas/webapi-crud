@@ -44,5 +44,20 @@ namespace ProjetoNaruto.Controllers
             return Ok(personagens);
         }
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Personagem>> GetPersonagem(int id)
+        {
+            // var espera receber lista do banco = _banco.nomedobanco.funcao
+            // faz a procura pelo id especifico
+            var personagem = await _appDbContext.Naruto.FindAsync(id);
+
+            if (personagem == null)
+            {
+                return NotFound("Personagem não encontrado");
+            }
+
+            return Ok(personagem);
+        }
+
     }
 }

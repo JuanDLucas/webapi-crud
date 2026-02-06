@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjetoNaruto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4178f6406c23dd5df1c276ac81d4016cf7e0030e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46aae842f5e22b4c8884fbbfdde4d5e7a3333826")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjetoNaruto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjetoNaruto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
